@@ -1,0 +1,45 @@
+body {
+    background-color: #000000; margin:0; padding:0
+}
+a {
+    color: #def871
+}
+a:visited {
+    color: #ff0067
+}
+h1 {
+    color: #2e2e2e; text-align:center; display:flex; padding-left: 345px;
+}
+h2 {
+    color: #2e2e2e; margin:100; padding-left:10px
+}
+h3 {
+    color: #2e2e2e; margin:100; padding-left:10px
+}
+p {
+    color: #2e2e2e; padding-left:10px
+}
+hr {
+    background-color: #111111; width: 20cm; color: #111111
+}
+li {
+    color: #2e2e2e
+}
+.abob {
+    padding-left: 330px; text-align:center; display: flex;
+}
+.abeb {
+    color: #ffff;
+}
+.letter {
+    color: #69ffc2; font-size: 240%
+}
+ul {
+    padding-left: 20px
+}
+.abib {
+    padding-left: 40px
+}
+.abibi {
+    padding-left: 570px
+}
