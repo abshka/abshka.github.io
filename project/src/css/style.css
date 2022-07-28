@@ -1,3 +1,46 @@
+
+@media only screen and (max-width:480px) {
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    hr {
+        font-size: 40px;
+    }
+}
+@media only screen and (min-width:480px) and (max-width:768px) {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+    hr {
+        font-size: 60px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1024) {
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 60px;
+    }
+    h3 {
+        font-size: 60px;
+    }
+    hr {
+        font-size: 80px;
+    }
+}
 body {
     background-color: #000000; margin:0; padding:0
 }
