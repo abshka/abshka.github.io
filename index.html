@@ -1,37 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
-<head> 
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Это мой первый пример страницы">
-    <meta name="author" content="AB">
-    <title>Get the fuck off</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-        <h1 class="html">Сказка о том, как Саня постигал HTML с CSS.</h1>
-        <h2 class="bred">Сказка о бреде, ставшем увлечением</h2>
-        <h2 class="life">Знали бы вы, как жизнь может по <i>щелчку</i> измениться - вы бы заплакали.</h2>
-        <h3 class="route"><span class="letter">П</span>уть его тернист, необычен. Но Саня не так прост.</h3>
-        <hr>
-        <p class ="smile"> А вообще по существу. Вот ты, кто читает этот текст - <i class="abeb"> ᅠ улыбнись</i>. Порадуй себя и ближних своих</p>
-        <hr>
-        <p class="reasons">Причины успеха Сани: Макс идёт нахуй</p>
-        <ul>
-            <li class="learing">Саня быстро обучается</li>
-            <li class="smart">Саня умен, хоть и скрывает это</li>
-            <li class="justme">Это просто Саня, что вы докопались</li>
-        </ul>
-        <div class="links">
-            <div class="tg">
-                <a href="https://t.me/r_equiescat">Мой Телеграм</a> 
-            </div>
-            <div class="vk">
-                <a href="https://vk.com/r_equiescat">Мой вк</a>
-            </div>
-        </div>
+    <title>Складское приложение</title>
+  </head>
+  <body>
 
-        <img src="img/306406.jpg" alt="Vaporwave">
-</body>
+    <nav>
+      <ul>
+        <li><a href="#auth">Вход в систему</a></li>
+        <li><a href="#reg">Регистрация</a></li>
+        <li><a href="#positions">Список позиций</a></li>
+        <li><a href="#position">Позиция №1</a></li>
+        <li><a href="#warehouse">Склад номер 1</a></li>
+        <li><a href="#create-waybill">Создание накладной</a></li>
+        <li><a href="#forecast">Прогноз использования позиций</a></li>
+      </ul>
+    </nav>
+
+    <section id="auth">
+      <h1>Вход в систему</h1>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"> <br>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password"> <br>
+        <input type="submit" value="Войти в систему">
+      </form>
+      <p><a href="#">Забыли пароль?</a></p>
+      <p><a href="#">Зарегистрироваться</a></p>
+    </section>
+
+    <section id="reg">
+      <h1>Регистрация</h1>
+      <form>
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" name="username"> <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"> <br>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password"> <br>
+        <input type="submit" value="Зарегистрироваться">
+      </form>
+      <p><a href="#">Войти в систему</a></p>
+    </section>
+
+    <section id="positions">
+      <h1>Список позиций</h1>
+      <ul>
+        <li>
+          <h2>Название позиции 1</h2>
+          <p>Описание позиции 1</p>
+          <p>Количество: 10</p>
+          <a href="#">Редактировать</a> <a href="#">Удалить</a>
+        </li>
+        <li>
+          <h2>Название позиции 2</h2>
+          <p>Описание позиции 2</p>
+          <p>Количество: 20</p>
+          <a href="#">Редактировать</a> <a href="#">Удалить</a>
+        </li>
+      </ul>
+      <p><a href="#">Добавить новую позицию</a></p>
+    </section>
+
+    <section id="position">
+      <h1>Позиция №1</h1>
+      <p>Название позиции: Название позиции 1</p>
+      <p>Описание: Описание позиции 1</p>
+      <p>Количество: 10</p>
+      <p><a href="#">Редактировать</a> <a href="#">Удалить</a></p>
+    </section>
+
+    <section id="warehouse">
+      <h1>Склад номер 1</h1>
+      <p>Название склада: Склад номер 1</p>
+      <p>Адрес склада: ул. Профсоюзная, д. 25</p>
+      <ul>
+        <li>
+          <h2>Название позиции 1</h2>
+          <p>Описание позиции 1</p>
+          <p>Количество: 10</p>
+          <a href="#">Редактировать</a> <a href="#">Удалить</a>
+        </li>
+        <li>
+          <h2>Название позиции 2</h2>
+          <p>Описание позиции 2</p>
+          <p>Количество: 20</p>
+          <a href="#">Редактировать</a> <a href="#">Удалить</a>
+        </li>
+      </ul>
+      <p><a href="#">Редактировать</a> <a href="#">Удалить</a></p>
+    </section>
+
+    <section id="create-waybill">
+      <h1>Создание накладной</h1>
+      <form>
+        <label for="position">Выбор позиции:</label>
+        <select id="position" name="position">
+          <option value="Название позиции 1">Название позиции 1</option>
+          <option value="Название позиции 2">Название позиции 2</option>
+        </select> <br>
+        <label for="date">Дата:</label>
+        <input type="date" id="date" name="date"> <br>
+        <label for="quantity">Количество:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="100"> <br>
+        <input type="submit" value="Создать">
+        <input type="button" value="Отмена">
+      </form>
+    </section>
+
+    <section id="forecast">
+      <h1>Прогноз использования позиций</h1>
+      <p>Период прогноза: 3 месяца</p>
+      <canvas id="chart"></canvas>
+      <table>
+        <thead>
+          <tr>
+            <th>Название позиции</th>
+            <th>Текущее количество</th>
+            <th>Прогнозное количество</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Название позиции 1</td>
+            <td>10</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>Название позиции 2</td>
+            <td>20</td>
+            <td>30</td>
+          </tr>
+        </tbody>
+      </table>
+      <form>
+        <label for="period">Период прогноза:</label>
+        <select id="period" name="period">
+          <option value="1">1 месяц</option>
+          <option value="3" selected>3 месяца</option>
+          <option value="6">6 месяцев</option>
+        </select> <br>
+        <input type="submit" value="Обновить прогноз">
+      </form>
+    </section>
+
+  </body>
 </html>
